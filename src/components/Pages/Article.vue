@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       scaler: {
-        width: (window.innerWidth > 414 ? 414 : window.innerWidth) + 'px'
+        width: (window.innerWidth > 414 ? 414 : window.innerWidth < 320 ? 320 : window.innerWidth) + 'px'
       },
       currentBlog: false
     }
@@ -36,6 +36,6 @@ export default {
   flex-direction: column;
 }
 .sim{
-  display: inline-block;
+  min-width: 320px;
 }
 </style>
