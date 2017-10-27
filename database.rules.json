@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "blog-data": {
+			".read": "true",
+    	".write": "auth != null && root.child('admin').hasChild(auth.uid)"
+    },
+    "blog-meta": {
+			".read": "true",
+    	".write": "auth != null && root.child('admin').hasChild(auth.uid)"
+    }
+  }
+}
